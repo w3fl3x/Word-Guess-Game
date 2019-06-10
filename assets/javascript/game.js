@@ -34,14 +34,14 @@ function Game() {
 };
 
 //Audio and Image
-var mcqueen = document.getElementById('Float');
-var mater = document.getElementById('Moon');
+var mcqueen = document.getElementById('mcqueen');
+var mater = document.getElementById('mater');
 var sally = document.getElementById('sally');
 var guido = document.getElementById('guido');
 var luigi = document.getElementById('luigi');
 var fillmore = document.getElementById('fillmore');
 var sarge = document.getElementById('sarge');
-var ramone = document.getElementById('ramone');
+var ramone = document.getElementById('flo');
 var flo = document.getElementById('flo');
 var doc = document.getElementById('doc');
 
@@ -58,11 +58,11 @@ function aud() {
         sally.pause();
         mater.pause();
         mcqueen.play();
-        document.getElementById("image").src="./assets/images/lightning.jpg";
+        document.getElementById("image").src = "./assets/images/lightning.jpg";
     }
 
     //mater audio and image
-    if (randomWord === words[1]) {
+    else if (randomWord === words[1]) {
         mcqueen.pause();
         doc.pause();
         flo.pause();
@@ -73,11 +73,11 @@ function aud() {
         guido.pause();
         sally.pause();
         mater.play();
-        document.getElementById("image").src="./assets/images/mater.jpg";
+        document.getElementById("image").src = "./assets/images/mater.jpg";
     }
 
     //sally audio and image
-    if (randomWord === words[1]) {
+    else if (randomWord === words[2]) {
         mater.pause();
         mcqueen.pause();
         doc.pause();
@@ -129,17 +129,17 @@ function complete() {
     console.log('Wins: ' + wins + '| Losses:' + losses + '| Number of Guesses Remaining' + guessesLeft);
 
     //if win. Alert with audio and image.
-    if (lettersOfWord.toString() === blanksAndCorrect.toString()) {
+    if (lettersOfWord.toString() == blanksAndCorrect.toString()) {
         wins++;
         aud();
         reset();
         document.getElementById("wins").innerHTML = '  ' + wins;
-    } else if (guessesLeft === 0) {
+    } else if (guessesLeft == 0) {
         losses++;
         reset();
         document.getElementById('losses').innerHTML = '  ' + losses;
     }
-    document.getElementById('currentword').innerHTML = '  ' + blanksAndCorrect.join(' ');
+    document.getElementById('current-word').innerHTML = '  ' + blanksAndCorrect.join(' ');
     document.getElementById('guesses-left').innerHTML = '  ' + guessesLeft;
 };
 
@@ -148,7 +148,7 @@ Game()
 
 document.onkeyup = function(event) {
     var guesses = String.fromCharCode(event.keyCode).toLowerCase();
-    checkLetters(guesses);
+    checkLetter(guesses);
     complete();
     console.log(guesses);
     document.getElementById("guessed").innerHTML = '  ' + wrongGuess.join(' ');
