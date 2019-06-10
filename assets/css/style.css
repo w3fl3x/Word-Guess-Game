@@ -14,10 +14,13 @@ p {
     color: white;
 }
 
+.container {
+    text-align: center;
+}
+
 #guesses-left,
 #guessed {
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
     color: white;
 }
 
