@@ -41,7 +41,7 @@ var guido = document.getElementById('guido');
 var luigi = document.getElementById('luigi');
 var fillmore = document.getElementById('fillmore');
 var sarge = document.getElementById('sarge');
-var ramone = document.getElementById('flo');
+var ramone = document.getElementById('ramone');
 var flo = document.getElementById('flo');
 var doc = document.getElementById('doc');
 
@@ -58,9 +58,8 @@ function aud() {
         sally.pause();
         mater.pause();
         mcqueen.play();
-        document.getElementById("image").src = "./assets/images/lightning.jpg";
+        document.getElementById('pic').src = 'assets/images/lightning.jpg';
     }
-
     //mater audio and image
     else if (randomWord === words[1]) {
         mcqueen.pause();
@@ -73,9 +72,8 @@ function aud() {
         guido.pause();
         sally.pause();
         mater.play();
-        document.getElementById("image").src = "./assets/images/mater.jpg";
+        document.getElementById('pic').src = 'assets/images/mater.jpg';
     }
-
     //sally audio and image
     else if (randomWord === words[2]) {
         mater.pause();
@@ -88,7 +86,105 @@ function aud() {
         luigi.pause();
         guido.pause();
         sally.play();
-        document.getElementById("image").src="./assets/images/sally.jpg";
+        document.getElementById('pic').src = 'assets/images/sally.jpg';
+    }
+    //guido audio and image
+    else if (randomWord === words[3]) {
+        sally.pause();
+        mater.pause();
+        mcqueen.pause();
+        doc.pause();
+        flo.pause();
+        ramone.pause();
+        sarge.pause();
+        fillmore.pause();
+        luigi.pause();
+        guido.play();
+        document.getElementById('pic').src = 'assets/images/guido.jpg';
+    }
+    //luigi audio and image
+    else if (randomWord === words[4]) {
+        guido.pause();
+        sally.pause();
+        mater.pause();
+        mcqueen.pause();
+        doc.pause();
+        flo.pause();
+        ramone.pause();
+        sarge.pause();
+        fillmore.pause();
+        luigi.play();
+        document.getElementById('pic').src = 'assets/images/luigi.jpg';
+    }
+    //fillmore audio and image
+    else if (randomWord === words[5]) {
+        luigi.pause();
+        guido.pause();
+        sally.pause();
+        mater.pause();
+        mcqueen.pause();
+        doc.pause();
+        flo.pause();
+        ramone.pause();
+        sarge.pause();
+        fillmore.play();
+        document.getElementById('pic').src = 'assets/images/fillmore.jpg';
+    }
+    //sarge audio and image
+    else if (randomWord === words[6]) {
+        fillmore.pause();
+        luigi.pause();
+        guido.pause();
+        sally.pause();
+        mater.pause();
+        mcqueen.pause();
+        doc.pause();
+        flo.pause();
+        ramone.pause();
+        sarge.play();
+        document.getElementById('pic').src = 'assets/images/sarge.jpg';
+    }
+    //ramone audio and image
+    else if (randomWord === words[7]) {
+        sarge.pause();
+        fillmore.pause();
+        luigi.pause();
+        guido.pause();
+        sally.pause();
+        mater.pause();
+        mcqueen.pause();
+        doc.pause();
+        flo.pause();
+        ramone.play();
+        document.getElementById('pic').src = 'assets/images/ramone.jpg';
+    }
+    //flo audio and image
+    else if (randomWord === words[8]) {
+        ramone.pause();
+        sarge.pause();
+        fillmore.pause();
+        luigi.pause();
+        guido.pause();
+        sally.pause();
+        mater.pause();
+        mcqueen.pause();
+        doc.pause();
+        flo.play();
+        document.getElementById('pic').src = 'assets/images/flo.jpg';
+    }
+    //doc audio and image
+    else if (randomWord === words[9]) {
+        flo.pause();
+        ramone.pause();
+        sarge.pause();
+        fillmore.pause();
+        luigi.pause();
+        guido.pause();
+        sally.pause();
+        mater.pause();
+        mcqueen.pause();
+        doc.play();
+        document.getElementById('pic').src = 'assets/images/doc.jpg';
     }
 };
 
