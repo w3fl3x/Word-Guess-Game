@@ -9,9 +9,12 @@ body {
     margin-right: auto;
 }
 
-p {
+p,
+h3,
+h4 {
     text-align: center;
     color: white;
+    font-family: 'Pacifico', cursive;
 }
 
 .container {
