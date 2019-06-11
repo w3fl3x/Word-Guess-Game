@@ -58,7 +58,7 @@ function aud() {
         sally.pause();
         mater.pause();
         mcqueen.play();
-        document.getElementById('image').src = './images/lightning.jpg';
+        document.getElementById("newImage").src = "assets/images/lightning.jpeg";
     }
     //mater audio and image
     else if (randomWord === words[1]) {
@@ -72,7 +72,7 @@ function aud() {
         guido.pause();
         sally.pause();
         mater.play();
-        document.getElementById('image').src = './images/mater.jpg';
+        document.getElementById("newImage").src = "assets/images/mater.png";
     }
     //sally audio and image
     else if (randomWord === words[2]) {
@@ -86,7 +86,7 @@ function aud() {
         luigi.pause();
         guido.pause();
         sally.play();
-        document.getElementById('image').src = './images/sally.jpg';
+        document.getElementById("newImage").src = "assets/images/sally.png";
     }
     //guido audio and image
     else if (randomWord === words[3]) {
@@ -100,7 +100,7 @@ function aud() {
         fillmore.pause();
         luigi.pause();
         guido.play();
-        document.getElementById('image').src = './images/guido.jpg';
+        document.getElementById("newImage").src = "assets/images/guido.png";
     }
     //luigi audio and image
     else if (randomWord === words[4]) {
@@ -114,7 +114,7 @@ function aud() {
         sarge.pause();
         fillmore.pause();
         luigi.play();
-        document.getElementById('image').src = './images/luigi.jpg';
+        document.getElementById("newImage").src = "assets/images/luigi.png";
     }
     //fillmore audio and image
     else if (randomWord === words[5]) {
@@ -128,7 +128,7 @@ function aud() {
         ramone.pause();
         sarge.pause();
         fillmore.play();
-        document.getElementById('image').src = './images/fillmore.jpg';
+        document.getElementById("newImage").src = "assets/images/fillmore.png";
     }
     //sarge audio and image
     else if (randomWord === words[6]) {
@@ -142,7 +142,7 @@ function aud() {
         flo.pause();
         ramone.pause();
         sarge.play();
-        document.getElementById('image').src = './images/sarge.jpg';
+        document.getElementById("newImage").src = "assets/images/sarge.png";
     }
     //ramone audio and image
     else if (randomWord === words[7]) {
@@ -156,7 +156,7 @@ function aud() {
         doc.pause();
         flo.pause();
         ramone.play();
-        document.getElementById('image').src = './images/ramone.jpg';
+        document.getElementById("newImage").src = "assets/images/ramone.png";
     }
     //flo audio and image
     else if (randomWord === words[8]) {
@@ -170,7 +170,7 @@ function aud() {
         mcqueen.pause();
         doc.pause();
         flo.play();
-        document.getElementById('image').src = './images/flo.jpg';
+        document.getElementById("newImage").src = "assets/images/flo.png";
     }
     //doc audio and image
     else if (randomWord === words[9]) {
@@ -184,7 +184,7 @@ function aud() {
         mater.pause();
         mcqueen.pause();
         doc.play();
-        document.getElementById('image').src = './images/doc.jpg';
+        document.getElementById("newImage").src = "assets/images/doc.png";
     }
 };
 
